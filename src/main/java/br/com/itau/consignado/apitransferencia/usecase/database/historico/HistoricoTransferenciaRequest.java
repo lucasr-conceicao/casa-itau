@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Getter
 @Builder
-public class GravarHistoricoTransferenciaRequest {
+public class HistoricoTransferenciaRequest {
 
     private UUID historicoId;
     private UUID contaOrigem;

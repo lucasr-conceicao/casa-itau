@@ -2,7 +2,7 @@ package br.com.itau.consignado.apitransferencia.usecase.transacoes;
 
 import br.com.itau.consignado.apitransferencia.usecase.database.cliente.ClienteResponse;
 import br.com.itau.consignado.apitransferencia.usecase.database.cliente.IBuscarCliente;
-import br.com.itau.consignado.apitransferencia.usecase.database.historico.GravarHistoricoTransferenciaRequest;
+import br.com.itau.consignado.apitransferencia.usecase.database.historico.HistoricoTransferenciaRequest;
 import br.com.itau.consignado.apitransferencia.usecase.database.historico.IGravarHistoricoTransferencia;
 import br.com.itau.consignado.apitransferencia.usecase.transacoes.exceptions.LimiteExcedidoException;
 import br.com.itau.consignado.apitransferencia.usecase.transacoes.exceptions.SaldoInsuficienteException;
@@ -48,8 +48,8 @@ public class TransferenciaImpl implements ITranferencia{
                 .build();
     }
 
-    private GravarHistoricoTransferenciaRequest montarRequestHistorico(TransferenciaRequest request, Date dataHoraTransferencia) {
-        return GravarHistoricoTransferenciaRequest.builder()
+    private HistoricoTransferenciaRequest montarRequestHistorico(TransferenciaRequest request, Date dataHoraTransferencia) {
+        return HistoricoTransferenciaRequest.builder()
                 .historicoId(UUID.randomUUID())
                 .contaOrigem(request.getContaOrigem())
                 .contaDestino(request.getContaDestino())
