@@ -1,0 +1,4 @@
+INSERT INTO tb_cliente VALUES (500, '80246071-7d5c-4acf-be4f-4ee330400d63', '3ebcad2f-f4d3-4ca4-82bf-23a2df1f8091', '52546198724', 'Lucas Rocha');
+INSERT INTO tb_cliente VALUES (1750, '9a7458e6-9993-4bb0-8ac8-ca2ed3418d58', 'c4905dc1-0e67-475a-9503-d3a097d9ac80', '65874589652', 'Andreia Araujo');
+INSERT INTO tb_cliente VALUES (1000, '4e427621-5468-4acd-849b-3ba3612b3bf4', '1390e46a-f7e2-4ccb-8983-6031923170b3', '32145269803', 'Juliana Sinkiti');
+INSERT INTO tb_cliente VALUES (250, 'dc2d54e8-3756-4bf4-8ddf-48e26d7a4e39', '214e0650-6f5e-4196-b319-81834c089c6e', '65205463057', 'Miltinho presidente');
